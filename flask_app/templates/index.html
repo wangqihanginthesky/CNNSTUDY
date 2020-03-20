@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>Index</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+        href="{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+    <h1>{{title}}</h1>
+    <p>{{message|upper}}</p>
+    <p>{{'My name is "%s" . Mail address is "%s".'|
+        format(person['name'],person['mail'])}}</p>
+    <ul>{% for item in data|reverse%}
+     <li>{{item}}</li>
+     {% endfor %}
+    </ul>
+</body>
+</html>

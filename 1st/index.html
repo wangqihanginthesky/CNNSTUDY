@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>{title}</title>
+    <meta charset="gbk">
+    <style>
+    body{{margin:10px;}}
+    h1{{color:lightgray;font-size=36pt;}}
+    p{{font-size:16pt;}}
+    </style>
+</head>
+<body>
+    <h1>{title}</h1>
+    <p>{message}</p>
+    <div>
+        <form method="post" action="/">
+            <div>
+                <input type="radio" id="r1" name="subject" value="rikei">
+                <label for="r1">理科</label>
+            </div>
+            <div>
+                <input type="radio" id="r2" name="subject" value="bunkei">
+                <label for="r2">文科</label>
+            </div>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
